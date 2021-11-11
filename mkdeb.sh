@@ -19,7 +19,7 @@ sudo rm -rf output/rootfs/
 sudo rm output/sdcard.img
 mkdir -p output 
 mkdir -p output/rootfs
-dd if=/dev/zero of=output/sdcard.img bs=1M count=2000
+dd if=/dev/zero of=output/sdcard.img bs=1M count=6000
 cat <<EOT | sudo  fdisk -u output/sdcard.img
 g
 n
